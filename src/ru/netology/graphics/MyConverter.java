@@ -58,7 +58,7 @@ public class MyConverter implements TextGraphicsConverter {
             for (int j = 0; j < newWidth; j++) {
                 int color = bwRaster.getPixel(i, j, new int[3])[0];
                 textImage[i][j] = schema.convert(color);
-                s = s + String.valueOf(textImage[i][j]);
+                s = s + textImage[i][j];
             }
         }
         return s;
